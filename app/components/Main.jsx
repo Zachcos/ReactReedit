@@ -8,7 +8,7 @@ export class Main extends React.Component {
         <Navigation />
         <div className="row">
           <div className="col-sm-6 col-sm-offset-3">
-            <h3>This is the main component</h3>
+            {this.props.children}
           </div>
         </div>
       </div>
