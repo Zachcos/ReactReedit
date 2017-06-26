@@ -27,7 +27,7 @@ export class Home extends React.Component {
     const renderItems = () => {
       return this.state.data.map(item => {
         return (
-          <div className="panel panel-default">
+          <div className="panel panel-default" key={item.data.id}>
             <div className="panel-body">
               {item.data.title}
             </div>
