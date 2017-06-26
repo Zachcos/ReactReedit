@@ -23,7 +23,24 @@ export class Home extends React.Component {
   }
 
   render() {
-    return <h3>This is the home component</h3>
+
+    const renderItems = () => {
+      return this.state.data.map(item => {
+        return (
+          <div className="panel panel-default">
+            <div className="panel-body">
+              {item.data.title}
+            </div>
+          </div>
+        )
+      }
+    )}
+
+    return(
+      <div>
+        {renderItems()}
+      </div>
+    )
   }
 }
 
