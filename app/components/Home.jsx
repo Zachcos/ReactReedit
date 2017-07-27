@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+import PostsList from 'PostsList';
+
 export class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -23,22 +25,9 @@ export class Home extends React.Component {
   }
 
   render() {
-
-    const renderItems = () => {
-      return this.state.data.map(item => {
-        return (
-          <div className="panel panel-default" key={item.data.id}>
-            <div className="panel-body">
-              {item.data.title}
-            </div>
-          </div>
-        )
-      }
-    )}
-
     return(
       <div>
-        {renderItems()}
+        <PostsList posts={this.state.data} />
       </div>
     )
   }
