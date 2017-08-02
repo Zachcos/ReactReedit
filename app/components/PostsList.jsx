@@ -12,8 +12,14 @@ const PostsList = ({ posts }) => {
 
       return (
         <div className="panel panel-default" style={{backgroundColor: bgColor}} key={item.data.id}>
-          <div className="panel-body">
-            {item.data.title}
+          <div className="panel-body container-fluid">
+            <div style={{display: 'inline'}}>
+              <span className="glyphicon glyphicon-arrow-up">
+              </span><b style={{marginLeft: 5}}>{item.data.ups}</b>
+            </div>
+            <div style={{display: 'inline', marginLeft: 20}}>
+              {item.data.title}
+            </div>
           </div>
         </div>
       )
@@ -23,7 +29,6 @@ const PostsList = ({ posts }) => {
   return (
     <div>
       {renderPosts()}
-      <p>this is filler</p>
     </div>
   )
 }
