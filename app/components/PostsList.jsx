@@ -23,6 +23,7 @@ const PostsList = ({ posts }) => {
           </div>
           <hr />
             <p style={{marginLeft: 10}}>Post by: <b><a href={`http://www.reddit.com/u/${item.data.author}`} target="_blank">{item.data.author}</a></b></p>
+            <p style={{marginLeft: 10}}>{item.data.num_comments} comments</p>
         </div>
       )
     }
