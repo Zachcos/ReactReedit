@@ -16,7 +16,7 @@ const PostListItem = ({data}) => {
           </span><b style={{marginLeft: 5}}>{data.ups}</b>
         </div>
         <div style={{display: 'inline', marginLeft: 20}}>
-          {data.title}
+          <a href={`http://www.reddit.com${data.permalink}`}>{data.title}</a>
         </div>
       </div>
       <hr />
