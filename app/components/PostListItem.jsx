@@ -2,11 +2,7 @@ import React from 'react';
 
 const PostListItem = ({data}) => {
   let bgColor = '';
-  if (data.over_18) {
-    bgColor = 'crimson'
-  } else {
-    bgColor = 'lightblue'
-  }
+  {(data.over_18) ? bgColor = 'crimson' : bgColor = 'lightblue'}
 
   return (
     <div className="panel panel-default" style={{backgroundColor: bgColor}} >
