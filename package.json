@@ -10,7 +10,7 @@
   "author": "Zach Cossman",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.18.1",
     "express": "^4.14.0",
     "prop-types": "^15.5.8",
     "react": "^15.5.0",
